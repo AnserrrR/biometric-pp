@@ -1,0 +1,154 @@
+<!-- HTML 5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biometric++</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="main-menu">
+    <a href="#" class="navbar-brand">Biometric++</a>
+    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#bdd9e4bd" class="bi bi-list"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+    </svg>
+    <ul class="menu-list">
+      <li><a href="#" id="promo-link">Возможности</a></li>
+      <li><a href="#" id="order-link">Оставить заявку</a></li>
+      <li><a href="#" id="contacts-link">Контакты</a></li>
+    </ul>
+  </nav>
+  <section class="page main-page">
+    <div class="main-picture viewport-picture"></div>
+    <div class="page-content">
+      <div class="main-text">
+        <h1>Быстрая оплата с помощью биометрии</h1>
+        <p>Новый этап в развитии систем бесконтактной оплаты. Совершайте свои покупки быстро, привязав биометрию лица к
+          вашему
+          банковскому счёту.
+        </p>
+      </div>
+      <div class="control">
+        <button class="btn btn-primary" id="start-btn">Узнать больше</button>
+      </div>
+    </div>
+  </section>
+  <section class="page promo">
+    <div class="promo-main-text">
+      <h2>Возможности системы и решения</h2>
+    </div>
+    <div class="services">
+      <div class="services-card">
+        <img src="/images/scan_auto_x2.jpg" alt="">
+        <h3>Считывание лица</h3>
+        <p>Сенсор-терминал распознаёт лицо клиента, биометрия которого хранится в нашей базе данных, после приобретения
+          услуги и отправляет запрос на обрабоку платежа.</p>
+      </div>
+      <div class="services-card">
+        <img src="https://inbusiness.kz/ru/images/original/37/images/vDmWeApB.jpg" alt="">
+        <h3>Интеграция системы</h3>
+        <p>Повысьте ваши продажи и скорость работы с клиентами, подключив нашу систему оплаты к своему бизнесу для
+          возможности обработки платежей через биометрию клиентов.</p>
+      </div>
+      <div class="services-card">
+        <img src="/images/CMSXJ11A.jpg" alt="">
+        <h3>Терминал-камера</h3>
+        <p>Специальная версия терминала для интеграции в бизнес со считыванием лица удалённо и при большом количестве
+          человек (Общественный транспорт, прокат).</p>
+      </div>
+    </div>
+  </section>
+  <section class="page order">
+    <div class="page-content">
+      <div class="request">
+        <h4>Хотите принять участие в программе?</h4>
+        <p>Чтобы иметь возможность пользоваться оплатой с помощью вашего лица в любом месте, где будет установлена
+          наша
+          система, вам необходимо оставить заявку на обработку вашей биометрии.
+        </p>
+        <div class="control">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Оставить заявку
+          </button>
+          <p class="small-inscription">*также вы можете воспользоваться формой в качестве связи с командой разработки по вопросам финансирования и
+            предложений
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <h5>Наши контакты:</h5>
+    <div class="contacts-list">
+      <div class="contact">
+        <img src="https://pngimg.com/uploads/vkontakte/vkontakte_PNG25.png" alt="">
+        <li><a href="https://vk.com/fckdpsht" id="promo-link">Белоусов Д. В.</a></li>
+      </div>
+
+      <div class="contact">
+        <img src="https://pngimg.com/uploads/vkontakte/vkontakte_PNG25.png" alt="">
+        <li><a href="https://vk.com/lbvfzgjytw">Колобков Д. О.</a></li>
+      </div>
+
+      <div class="contact">
+        <img src="https://pngimg.com/uploads/vkontakte/vkontakte_PNG25.png" alt="">
+        <li><a href="https://vk.com/georgiy33">Шипарев Г.Н.</a></li>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заявка на участие в программе</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="form-order">
+            <label class="form-label">ФИО
+              <input class="form-control" type="text" name="fio">
+            </label>
+            <label class="form-label">
+              Контактный телефон
+              <input class="form-control" type="tel" name="phone">
+            </label>
+            <label for="select-country">Страна проживания</label>
+            <select name="country" id="select-country" class="form-select" aria-label="Default select example">
+              <option selected>Выберите страну</option>
+              <option value="Russia">Россия</option>
+              <option value="Ukraine">Украина</option>
+              <option value="Belarus">Беларусь</option>
+            </select>
+            <label class="form-label" for="address">
+              Адрес проживания
+            </label>
+            <textarea id="address" class="form-control" type="text" name="address" style="width: 100%;"></textarea>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button id="btn-order" type="button" class="btn btn-primary" data-bs-dismiss="modal">Принять</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

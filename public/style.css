@@ -1,0 +1,359 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 350;
+    font-size: 52px;
+    color: #1a2235;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto 0px;
+    background-color: #1a2235;
+}
+
+h3 {
+    font-weight: 370;
+    font-size: 22px;
+}
+
+.main-text {
+    text-align: center;
+    color: #d2f2ff;
+    max-width: 800px;
+}
+
+.main-text::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto;
+    background-color: #d2f2ff;
+}
+
+img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #d2f2ffcc;
+    border-width: 3px;
+    color: #d2f2ff;
+}
+
+.btn-primary:hover {
+    background-color:#1a2235;
+    border-color: #1a2235;
+    color: #e0f6ffde;
+}
+
+.btn-primary:focus {
+    background-color:#1a2235;
+    border-color: #1a2235;
+    color: #e0f6ffde;
+}
+
+.page {
+    position: relative;
+    height: 100vh;
+}
+
+.viewport-picture {
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%; 
+    height: 100%;   
+}
+
+.main-picture {
+    background-image: url('/images/1_auto_x2.jpg');
+}
+
+.page-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    bottom: 0; 
+    right: 0;
+    color: white;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-menu {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a2235;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+
+.menu-list {
+    display: flex;
+    gap: 2em;
+    margin: 0;
+}
+
+.menu-list li {
+    list-style-type: none;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #bdd9e4bd;
+    position: relative;
+}
+
+.menu-list a:hover {
+    color: #d2f2ff;
+}
+
+.menu-list a:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.4px;
+
+    background-color: #d2f2ff;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+
+    transition: opacity .16s linear;
+}
+
+.menu-list a:hover:after {
+    opacity: 1;
+}
+.navbar-brand {
+    color: #ced9dddc;
+    padding: 0px 2px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.navbar-brand:hover {
+    color: #d2f2ff;
+}
+
+.bi-list {
+    display: none;
+}
+
+.promo {
+    background: linear-gradient(#d2f2ff,#fff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    text-align: center;
+    min-height: 100vh;
+    height: auto;
+}
+
+.promo p{
+    font-size: medium;
+    margin: .5rem;
+}
+
+.services {
+    display: grid;
+    margin-top: 2rem;
+    --cols-num: 3;
+    grid-template-columns: repeat(var(--cols-num), 230px);
+    grid-template-rows: auto;
+    column-gap: 2.5rem;
+    row-gap: 1rem;
+}
+
+.services-card {
+    height: 380px;
+    width: 250px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 16%);
+    color: #1a2235;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.services-card img {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.order {
+    max-height: 70vh;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-image: url('/images/shutterstock_731158624_auto_x2.jpg');
+}
+
+.request {
+    position: absolute;
+    left: 0;
+    padding-left: 15%;
+    padding-right: 3%;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 52vw;
+    background-image: url('/images/shattered-island.gif');
+    opacity: 0.9;
+    color: #d2f2ff;
+}
+
+.small-inscription {
+    color: rgba(203, 214, 214, 0.61);
+    margin-top: 10px;
+    font-size: small;
+}
+
+.fade {
+    color: #1a2235;
+}
+
+.fade .btn-primary {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #1a2235b9;
+    border-width: 3px;
+    color: #1a2235;
+}
+
+.fade .btn-primary:hover {
+    background-color:#1a2235;
+    border-color: #1a2235;
+    color: #e0f6ffde;
+}
+
+.fade .btn-primary:focus {
+    background-color:#1a2235;
+    border-color: #1a2235;
+    color: #e0f6ffde;
+}
+
+.contacts {
+    min-height: 25vh;
+    background-color: rgba(0, 0, 8, 0.932);
+    padding: 5vh 0vw 5vh 10vw;
+}
+
+.contacts h5 {
+    color: #d2f2ffb0;
+}
+
+.contacts-list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact {
+    margin: 15px 13vw 0 0;
+    display: flex;
+}
+
+.contact img {
+    margin: 3px 3px 0 0;
+    width: 19.2px;
+    height: 19.2px;
+}
+
+.contact li {
+    list-style-type: none;
+}
+
+.contact a {
+    color: #d2f2ffb0;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #d2f2ff8f;
+}
+
+@media (max-width: 970px) {
+    .main-menu {
+        flex-wrap: wrap;
+    }
+
+    .bi-list {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+
+    .menu-list {
+        --menu-li-height: 1rem;
+        --menu-li-gap: .5rem;
+        --menu-elems-num: 3;
+        width: 100%;
+        height: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--menu-li-gap);
+        padding: 0;
+        overflow: hidden;
+        transition: height .7s;
+    }
+
+    .menu-list.show {
+        margin-top: 5px;
+        height: calc((var(--menu-li-height) + var(--menu-li-gap)) * var(--menu-elems-num));
+    }
+
+    .menu-list li {
+        height: var(--menu-li-height);
+    }
+
+    .promo {
+        height: auto;
+    }
+
+    .services {
+        --cols-num: 1;
+    }
+
+    .request {
+        width: 100vw;
+    }
+
+    .contacts-list {
+        display: block;
+    }
+}

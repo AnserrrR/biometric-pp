@@ -1,0 +1,34 @@
+POST http://localhost:3000/api/trip
+Content-Type: application/json
+
+{
+    "fio": "FIO",
+    "phone": "+7(999)456-78-990",
+    "address": "address",
+    "country": "Italy"
+}
+
+###
+
+POST http://localhost:3000/api/admin
+Content-Type: application/json
+
+{
+    "name": "Vasia",
+    "password": "12345"
+}
+
+###
+
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "name": "Vasia",
+    "password": "12345"
+}
+
+###
+
+GET http://localhost:3000/api/application
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjIxNjAzNTA0LCJleHAiOjE2MjE3NzYzMDR9.mKkZRbkvAOWpSZA0_78O08okTMxiKj0cldp-kLtszgQ
