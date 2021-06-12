@@ -66,14 +66,14 @@ function startApp() {
     //     res.send('Hello from express')
     // })
 
-    app.post('/api/admin', async function (req, res) {
-        const passwordHash = createPasswordHash(req.body.password)
-        const newAdmin = await Admin.create({
-            name: req.body.name,
-            password: passwordHash
-        })
-        res.send(newAdmin)
-    })
+    // app.post('/api/admin', async function (req, res) {
+    //     const passwordHash = createPasswordHash(req.body.password)
+    //     const newAdmin = await Admin.create({
+    //         name: req.body.name,
+    //         password: passwordHash
+    //     })
+    //     res.send(newAdmin)
+    // })
 
     app.post('/api/login', async function (req, res) {
         const userFromDB = await Admin.findOne({ where: { name: req.body.name } })

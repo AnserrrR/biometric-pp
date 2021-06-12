@@ -20,6 +20,16 @@ Content-Type: application/json
 
 ###
 
+POST https://biometric-pp.herokuapp.com/api/admin
+Content-Type: application/json
+
+{
+    "name": "AnserrrR",
+    "password": "admin12345"
+}
+
+###
+
 POST http://localhost:3000/api/login
 Content-Type: application/json
 
