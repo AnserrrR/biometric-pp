@@ -9,7 +9,7 @@ const path = require('path')
 
 const port = process.env.PORT || 3000
 
-const sequelize = new Sequelize('xgzi1skwph8r0m1r', 'fcro6mxjlpctfyiq	', 'm5swpf29c63798d4', {
+const sequelize = new Sequelize('xgzi1skwph8r0m1r', 'fcro6mxjlpctfyiq', 'm5swpf29c63798d4', {
     host: 'd3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
     dialect: 'mysql'
 });
